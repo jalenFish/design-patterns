@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})//表示不连数据库，如果要连数据库，将该注解去掉
 @EnableAsync
 @EnableScheduling
 @SpringBootApplication
