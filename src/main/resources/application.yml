@@ -1,0 +1,75 @@
+spring:
+  datasource:
+    url: jdbc:mysql://xxx.xx.xx.xx:3306/xxxxxx?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+    username: xxxxx
+    password: xxxxxxxxxxxx
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    initialization-mode: always
+    continue-on-error: true
+#    schema:
+#    - "classpath:db/schema.sql"
+#    data:
+#    - "classpath:db/data.sql"
+    hikari:
+      minimum-idle: 5
+      connection-test-query: SELECT 1 FROM DUAL
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: SpringBootDemoHikariCP
+      max-lifetime: 60000
+      connection-timeout: 30000
+
+  mvc:
+
+#第一个redis
+#  redis:
+#    host: xxx.xx.xx.xx
+#    port: 6379
+#    password: xxxxxxxxx
+#    timeout: 5000ms
+#    database: 1
+#    lettuce:
+#      pool:
+#        # 连接池最大连接数（使用负值表示没有限制） 默认 8
+#        max-active: 8
+#        # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+#        max-wait: -1ms
+#        # 连接池中的最大空闲连接 默认 8
+#        max-idle: 8
+#        # 连接池中的最小空闲连接 默认 0
+#        min-idle: 1
+    #第一个集群
+#    cluster:
+#      nodes: xxx.xx.xx.xx:16001,xxx.xx.xx.xx:16002,xxx.xx.xx.xx:16003,xxx.xx.xx.xx:16004,xxx.xx.xx.xx:16005,xxx.xx.xx.xx:16006
+#      password: xxxxxxxxx
+
+
+
+logging:
+#  level:
+#    com.xkcoding: debug
+#    com.xkcoding.orm.mybatis.mapper: trace
+  config: classpath:logback.xml
+
+mybatis:
+  configuration:
+    # 下划线转驼峰
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    call-setters-on-nulls: true
+  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.xkcoding.orm.mybatis.entity
+#  config-location: classpath:mybatis/mybatis-config.xml
+
+
+#pagehelper:
+#    helper-dialect: mysql
+#    reasonable: "true"
+#    support-methods-arguments: "true"
+#    params: count=countSql
+
+
+server:
+    port: 1008
