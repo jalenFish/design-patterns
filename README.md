@@ -28,7 +28,7 @@
 
 | 行为型模式  | 共十一种  |  博客介绍链接 |  代码地址   |
 | ------------ | ------------ | ------------ | ------------ |
-|   | 策略模式  |          |             |
+|(已完成）   | 策略模式  |[点击进入](https://blog.csdn.net/qq_27471405/article/details/108886135 "点击进入")          |[点击进入](https://github.com/jalenFish/design-patterns/tree/master/src/main/java/cn/zygxsq/design/module/strategyPattern "点击进入")             |
 |   | 模板方法模式  |          |             |
 |   | 观察者模式  |          |             |
 |   | 迭代器模式  |          |             |
