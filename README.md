@@ -11,7 +11,7 @@
 | ------------ | ------------ | ------------ | ------------ |------------ |
 |(已完成)  | 工厂方法模式  |  [点击进入](https://github.com/jalenFish/design-patterns/tree/master/src/main/java/cn/zygxsq/design/module/factoryPattern "点击进入")   |  [点击进入](https://blog.csdn.net/qq_27471405/article/details/107607047 "点击进入") |[点击进入](https://www.cnblogs.com/jalenFish/p/14098998.html "点击进入") |
 |(已完成） | 抽象工厂模式  |     [点击进入](https://github.com/jalenFish/design-patterns/tree/master/src/main/java/cn/zygxsq/design/module/factoryPattern/abstractFactory "点击进入")        |  [点击进入](https://blog.csdn.net/qq_27471405/article/details/107607047 "点击进入")       | [点击进入](https://www.cnblogs.com/jalenFish/p/14098998.html "点击进入") |
-|   | 单例模式  |          |             |     |
+|(已完成） | 单例模式  |    [点击进入](https://github.com/jalenFish/design-patterns/tree/master/src/main/java/cn/zygxsq/design/module/singletonPattern)      |         [点击进入](https://blog.csdn.net/qq_27471405/article/details/127167410)     |     |
 |   | 建造者模式  |          |             |    |
 |   | 原型模式  |          |             | |    |
 
